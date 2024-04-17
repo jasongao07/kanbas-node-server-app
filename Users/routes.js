@@ -68,13 +68,13 @@ export default function UserRoutes(app) {
 
   };
 
-  app.post("https://kanbas-node-server-app-1-26is.onrender.com/api/users", createUser);
-  app.get("https://kanbas-node-server-app-1-26is.onrender.com/api/users", findAllUsers);
-  app.get("https://kanbas-node-server-app-1-26is.onrender.com/api/users/:userId", findUserById);
-  app.put("https://kanbas-node-server-app-1-26is.onrender.com/api/users/:userId", updateUser);
-  app.delete("https://kanbas-node-server-app-1-26is.onrender.com/api/users/:userId", deleteUser);
-  app.post("https://kanbas-node-server-app-1-26is.onrender.com/api/users/signup", signup);
-  app.post("https://kanbas-node-server-app-1-26is.onrender.com/api/users/signin", signin);
-  app.post("https://kanbas-node-server-app-1-26is.onrender.com/api/users/signout", signout);
-  app.post("https://kanbas-node-server-app-1-26is.onrender.com/api/users/profile", profile);
+  app.post("/api/users", createUser);
+  app.get("/api/users", findAllUsers);
+  app.get("/api/users/:userId", findUserById);
+  app.put("/api/users/:userId", updateUser);
+  app.delete("/api/users/:userId", deleteUser);
+  app.post("/api/users/signup", signup);
+  app.post("/api/users/signin", signin);
+  app.post("/api/users/signout", signout);
+  app.post("/api/users/profile", profile);
 }
